@@ -132,9 +132,9 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
@@ -144,3 +144,190 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* Index Page */
+/* Nav Bar */
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+/* Nav Items */
+.nav-item{
+    text-decoration: none;
+    color: black;
+    padding:0px 64px 0px 0px; 
+}
+/*Header Image */
+.header-image{
+    widows: 100%;
+    padding: 10px 0 30px 0;
+}
+
+/* box1 */
+ .boxes .box:nth-child(1) {
+    background-color:teal;
+}
+
+/* box 2 */
+.boxes .box:nth-child(2) {
+    background-color:gold;
+}
+
+/* box 3 */
+.boxes .box:nth-child(3) {
+    background-color:cadetblue;
+}
+
+/* box 4 */
+.boxes .box:nth-child(4) {
+    background-color:coral;
+}
+
+/* box 5 */
+.boxes .box:nth-child(5) {
+    background-color:crimson;
+}
+
+/* box 6 */
+.boxes .box:nth-child(6) {
+    background-color:forestgreen;
+}
+
+/* box 7 */
+.boxes .box:nth-child(7) {
+    background-color:darkorchid;
+}
+
+/* box 8 */
+.boxes .box:nth-child(8) {
+    background-color:hotpink;
+}
+
+/* box 9 */
+.boxes .box:nth-child(9) {
+    background-color:indigo;
+}
+
+/* box 10 */
+.boxes .box:nth-child(10) {
+    background-color:dodgerblue;
+}
+
+/* About Page CSS */
+
+.about_content_container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.about-content-wide{
+    margin: 0px 0px 20px 0px;
+}
+
+.about-content-small{
+    width: 45%;
+    height: 500px;
+}
+
+.about_content_container button{
+    background: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px 15px 10px 15px;
+}
+
+.about_content_container hr{
+    border-top: 1px dashed;
+}
+
+
+/* Animations */
+
+
+.about_content_container button:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+.boxes:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+input:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+
+
+
+  /* Contact Form  */
+  .contact_content_container{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      height: 700px;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: crimson;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: salmon;
+  }
+  
+  .contact_content {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 600px;
+  }
+
