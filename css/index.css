@@ -132,9 +132,9 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
@@ -330,3 +330,4 @@ input:hover {
     padding: 20px;
     height: 600px;
   }
+
